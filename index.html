@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMH - Developer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 90px 20px 50px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e3a8a, #0b1220);
+    }
+
+    header h1 {
+      font-size: 54px;
+      margin: 0;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-top: 0;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .project {
+      background: #0f172a;
+      border: 1px solid #1f2937;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn-blue {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-dark {
+      background: #1f2937;
+      color: #e5e7eb;
+      border: 1px solid #374151;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>JMH</h1>
+  <p>
+    Developer who builds offline-first mobile apps and simple, fast web experiences.
+  </p>
+</header>
+
+<div class="container">
+
+  <!-- ABOUT -->
+  <div class="card">
+    <h2>About me</h2>
+    <p>
+      I’m a self-taught developer focused on building offline-first applications,
+      especially mobile apps. I like simple UI, fast performance, and clean design.
+    </p>
+    <p>
+      I mainly build Flutter apps and small web projects hosted on GitHub Pages.
+    </p>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="card">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Fribaaja</h3>
+        <p>
+          Offline disc golf scoring app built with Flutter. Tracks rounds, stats and players without internet.
+        </p>
+        <a class="btn btn-blue"
+           href="https://jmhonk.github.io/Fribaaja/"
+           target="_blank">
+          View project
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>Main website</h3>
+        <p>
+          Personal GitHub Pages site with projects and information.
+        </p>
+        <a class="btn btn-dark"
+           href="https://jmhonk.github.io/"
+           target="_blank">
+          Visit site
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      Open for small projects and ideas. Mostly focused on Flutter and web apps.
+    </p>
+    <p>
+      Email: <strong>jmhonkanen@outlook.com</strong>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 JMH • Built with GitHub Pages •
+  <a href="https://jmhonk.github.io/Fribaaja/" target="_blank">Fribaaja</a>
+</footer>
+
+</body>
+</html>
