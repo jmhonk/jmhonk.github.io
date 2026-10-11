@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jmhonk – Developer</title>
-  <meta name="description" content="Jmhonk – developer building offline-first mobile apps: Fribaaja disc golf scoring and Valokuvaskanneri photo scanner.">
+  <meta name="description" content="Jmhonk – developer building offline-first apps: Fribaaja disc golf scoring, Valokuvaskanneri photo scanner and HonkaPlayer music player for Windows.">
   <meta name="theme-color" content="#07161a">
   <link rel="icon" href="jmhonk_icon.png">
   <link rel="apple-touch-icon" href="jmhonk_icon.png">
@@ -92,7 +92,7 @@
 
     .icons {
       display: flex;
-      gap: 20px;
+      gap: clamp(12px, 3vw, 20px);
       justify-content: center;
     }
 
@@ -104,10 +104,11 @@
 
     .icons a:nth-child(1) { transform: rotate(-5deg); }
     .icons a:nth-child(2) { transform: rotate(4deg) translateY(18px); }
+    .icons a:nth-child(3) { transform: rotate(-3deg) translateY(-6px); }
 
     .icons img {
       display: block;
-      width: clamp(110px, 26vw, 168px);
+      width: clamp(88px, 22vw, 150px);
       height: auto;
       border-radius: 28px;
     }
@@ -238,6 +239,7 @@
     @media (min-width: 820px) {
       .hero { grid-template-columns: 1.2fr 1fr; }
       .projects { grid-template-columns: 1fr 1fr; }
+      .project.wide { grid-column: 1 / -1; }
       .about { grid-template-columns: 240px 1fr; align-items: start; }
       .about h2 { margin: 0; }
     }
@@ -258,7 +260,7 @@
     <div>
       <p class="where">Developer in Finland</p>
       <h1>Jmhonk</h1>
-      <p class="lead">I build offline-first mobile apps and simple, fast web projects.</p>
+      <p class="lead">I build offline-first mobile and desktop apps and simple, fast web projects.</p>
       <a class="btn btn-primary" href="#projects">See my projects</a>
     </div>
 
@@ -268,6 +270,9 @@
       </a>
       <a href="https://jmhonk.github.io/Valokuvaskanneri/" target="_blank" rel="noopener">
         <img src="valokuvaskanneri_icon.png" width="168" height="168" alt="Valokuvaskanneri">
+      </a>
+      <a href="https://jmhonk.github.io/HonkaPlayer/" target="_blank" rel="noopener">
+        <img src="honkaplayer_icon.png" width="168" height="168" alt="HonkaPlayer">
       </a>
     </div>
   </div>
@@ -280,13 +285,15 @@
     <div>
       <p>
         I’m a self-taught developer building apps that work without a connection and keep your data on your own device.
-        I work with Flutter and native Android, and I prefer simple UI, fast performance and a clean user experience.
+        I work with Flutter, native Android and Electron, and I prefer simple UI, fast performance and a clean user experience.
       </p>
       <ul class="chips">
         <li>Flutter</li>
         <li>Kotlin</li>
         <li>Jetpack Compose</li>
         <li>OpenCV</li>
+        <li>Electron</li>
+        <li>JavaScript</li>
         <li>Offline-first</li>
         <li>WordPress</li>
       </ul>
@@ -329,6 +336,22 @@
         </div>
       </article>
 
+      <article class="project wide">
+        <div class="project-head">
+          <img src="honkaplayer_icon.png" width="72" height="72" alt="">
+          <div>
+            <h3>HonkaPlayer</h3>
+            <div class="platform">Windows app · Electron</div>
+          </div>
+        </div>
+        <p>Winamp-inspired music player for your own music library. Library with search and grouping, playlists, 10-band equalizer, volume levelling, crossfade and media keys. No installation: unzip and run.</p>
+        <ul class="chips"><li>Electron</li><li>JavaScript</li><li>Web Audio API</li></ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://jmhonk.github.io/HonkaPlayer/" target="_blank" rel="noopener">View project</a>
+          <a class="btn btn-secondary" href="https://github.com/jmhonk/HonkaPlayer/releases/latest/download/HonkaPlayer.zip">Download for Windows</a>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -338,7 +361,8 @@
   <div class="inner">
     © 2026 Jari-Matti Honkanen • Built with GitHub Pages •
     <a href="https://jmhonk.github.io/Fribaaja/" target="_blank" rel="noopener">Fribaaja</a> •
-    <a href="https://jmhonk.github.io/Valokuvaskanneri/" target="_blank" rel="noopener">Valokuvaskanneri</a>
+    <a href="https://jmhonk.github.io/Valokuvaskanneri/" target="_blank" rel="noopener">Valokuvaskanneri</a> •
+    <a href="https://jmhonk.github.io/HonkaPlayer/" target="_blank" rel="noopener">HonkaPlayer</a>
   </div>
 </footer>
 
