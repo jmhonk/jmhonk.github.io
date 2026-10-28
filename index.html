@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jmhonk – Developer</title>
-  <meta name="description" content="Jmhonk – developer building offline-first apps: Fribaaja disc golf scoring, Valokuvaskanneri photo scanner and HonkaPlayer music player for Windows.">
+  <meta name="description" content="Jmhonk – developer building offline-first apps: Fribaaja disc golf scoring, Valokuvaskanneri photo scanner, Punnari weight tracker and HonkaPlayer music player for Windows.">
   <meta name="theme-color" content="#07161a">
   <link rel="icon" href="jmhonk_icon.png">
   <link rel="apple-touch-icon" href="jmhonk_icon.png">
@@ -90,9 +90,11 @@
 
     .hero .btn { margin-top: 28px; }
 
+    /* Neljä kuvaketta 2 × 2 -ruudukossa, jotta ne mahtuvat myös kapealle näytölle */
     .icons {
-      display: flex;
-      gap: clamp(12px, 3vw, 20px);
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: clamp(14px, 3vw, 22px);
       justify-content: center;
     }
 
@@ -105,10 +107,11 @@
     .icons a:nth-child(1) { transform: rotate(-5deg); }
     .icons a:nth-child(2) { transform: rotate(4deg) translateY(18px); }
     .icons a:nth-child(3) { transform: rotate(-3deg) translateY(-6px); }
+    .icons a:nth-child(4) { transform: rotate(5deg) translateY(12px); }
 
     .icons img {
       display: block;
-      width: clamp(88px, 22vw, 150px);
+      width: clamp(96px, 26vw, 140px);
       height: auto;
       border-radius: 28px;
     }
@@ -270,6 +273,9 @@
       <a href="https://jmhonk.github.io/Valokuvaskanneri/" target="_blank" rel="noopener">
         <img src="valokuvaskanneri_icon.png" width="168" height="168" alt="Valokuvaskanneri">
       </a>
+      <a href="https://jmhonk.github.io/Punnari/" target="_blank" rel="noopener">
+        <img src="punnari_icon.png" width="168" height="168" alt="Punnari">
+      </a>
       <a href="https://jmhonk.github.io/HonkaPlayer/" target="_blank" rel="noopener">
         <img src="honkaplayer_icon.png" width="168" height="168" alt="HonkaPlayer">
       </a>
@@ -337,6 +343,22 @@
 
       <article class="project">
         <div class="project-head">
+          <img src="punnari_icon.png" width="72" height="72" alt="">
+          <div>
+            <h3>Punnari</h3>
+            <div class="platform">Android app · Flutter</div>
+          </div>
+        </div>
+        <p>Track your weight and body measurements in clear charts. Change since the start, goal weight, weekly averages, dual-axis charts and Health Connect sync, with all data on your device. Available in Finnish and English.</p>
+        <ul class="chips"><li>Flutter</li><li>Health Connect</li><li>Offline-first</li></ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://jmhonk.github.io/Punnari/" target="_blank" rel="noopener">View project</a>
+          <a class="btn btn-secondary" href="https://jmhonk.github.io/Punnari/PrivacyPolicy.html" target="_blank" rel="noopener">Privacy policy</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
           <img src="honkaplayer_icon.png" width="72" height="72" alt="">
           <div>
             <h3>HonkaPlayer</h3>
@@ -361,6 +383,7 @@
     © 2026 Jari-Matti Honkanen • Built with GitHub Pages •
     <a href="https://jmhonk.github.io/Fribaaja/" target="_blank" rel="noopener">Fribaaja</a> •
     <a href="https://jmhonk.github.io/Valokuvaskanneri/" target="_blank" rel="noopener">Valokuvaskanneri</a> •
+    <a href="https://jmhonk.github.io/Punnari/" target="_blank" rel="noopener">Punnari</a> •
     <a href="https://jmhonk.github.io/HonkaPlayer/" target="_blank" rel="noopener">HonkaPlayer</a>
   </div>
 </footer>
